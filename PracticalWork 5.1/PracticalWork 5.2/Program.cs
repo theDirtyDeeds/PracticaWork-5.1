@@ -21,10 +21,11 @@
 
         static string Reverse(string reverseText)
         {
+            var callSplit = SplitText(reverseText);
 
-            for (int i = SplitText(reverseText).Length; i >= 0; i--)
+            for (int i = callSplit.Length - 1; i >= 0; i--)
             {
-                Console.Write(reverseText[i]);
+                Console.Write(callSplit[i] + " ");
             }
             return reverseText;
         }
